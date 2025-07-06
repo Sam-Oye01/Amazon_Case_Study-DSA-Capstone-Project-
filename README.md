@@ -153,6 +153,18 @@ Task 14: Top 5 Products by Rating and Review count combined
 - Filter Top 5.
 
 
+### Visualization and Reporting
+
+**Dashboard creation**
+
+Dashboard Structure (Layout)
+
+| Section | Visuals Included | Notes |
+| :-----: | :-------------: | :----: |
+| Header Area (Top Row) | Dashboard Title: Amazon Product Review Dashboard, Date of Last Refresh, Name/Project Label | Text box is used with bold and large fonts for the title |
+                          
+
+
 
 
 
