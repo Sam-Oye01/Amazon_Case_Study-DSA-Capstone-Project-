@@ -58,9 +58,9 @@ The dataset contains information scraped from Amazon product pages, including:
 
 ``` MS EXCEL ```
 
-        - Measure 1: =[Count of Product_name]
-        - Measure 3: =sum([Review_count])
-        - Measure 4: =average([Discount_percentage])
+        - Measure 1 as Total products: =[Count of Product_name]
+        - Measure 3 as Total review count: =sum([Review_count])
+        - Measure 4 as Avg % Discount: =average([Discount_percentage])
 
         
 ### Exploratory Data Analysis (EDA)
@@ -162,7 +162,7 @@ Dashboard Structure (Layout)
 | Section | Visuals Included | Notes |
 | :-----: | :-------------: | :----: |
 | Header Area (Top Row) | Dashboard Title: Amazon Product Review Dashboard, Date of Last Refresh, Name/Project Label | Text box is used with bold and large fonts for the title |
-| Key Metrics Section (KPIs) |  Total Reviews, Total Number of Products, Avg. Discount %, Total Potential revenue | Shapes with bold numbers were used
+| Key Metrics Section (KPIs) |  Total Reviews, Total Number of Products, Avg. Discount %, Total Potential revenue | Shapes with bold numbers were used |
 
                           
 
