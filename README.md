@@ -31,7 +31,16 @@ The dataset contains information scraped from Amazon product pages, including:
     - Column headers were formatted in the proper case.
     - Rating Count column header was changed to Review count.
 - **Data Manipulation:**
+    - Data sets were added to the data model in the power pivot for easy manipulation and were updated periodically as new columns were being created.
     - Category column was splitted into (Product Category and Produt sub-category) using the "Text to columns" command in the Data tab. The delimiter used was the pipe sign (|)
+    - Two calculated columns were created. They are :
+  
+``` MS EXCEL ```
+
+         - Potential Revenue: =[@[Actual_price]]*[@[Review_count]]
+         - Combined score (Ratings and Reviews count): =([@Rating] * [@[Review_count]])
+         
+      
     - Conditional columns were created using "IF" function for the following columns:
  
 ``` MS EXCEL ```
@@ -43,7 +52,17 @@ The dataset contains information scraped from Amazon product pages, including:
         - % Discount boundaries: =IF([@[Discount_percentage]] < 20%, "< 20%", IF(AND([@[Discount_percentage]] < 40%, [@[Discount_percentage]] > 20%), "20% - 40%", IF(AND([@[Discount_percentage]] < 60%, [@[Discount_percentage]] > 40%), "40% - 60%", IF(AND([@[Discount_percentage]] < 80%, [@[Discount_percentage]] > 60%), "60% - 80%", "80% - 100%"))))
         - Review count distribution: =IF([@[Review_count]] < 1000, "Low reviews", "High reviews")
 
-    - 
+
+- Three measures were created on the power pivot
+
+``` MS EXCEL ```
+
+        - Measure 1: =[Count of Product_name]
+        - Measure 3: =sum([Review_count])
+        - Measure 4: =average([Discount_percentage])
+
+        
+
 
 
 
