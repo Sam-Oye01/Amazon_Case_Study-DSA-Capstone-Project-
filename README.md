@@ -152,6 +152,8 @@ Task 14: Top 5 Products by Rating and Review count combined
 - Sort Descending.
 - Filter Top 5.
 
+Excel file: [Download here](https://github.com/user-attachments/files/21090789/Amazon.case.study.MS.Excel.Project.xlsx)
+
 
 ### Visualization and Reporting
 
@@ -169,6 +171,9 @@ Dashboard Structure (Layout)
 | Visual 6: Review Insights	| Bar Chart: Total Reviews by Main Category	Display side by side for comparison |  |
 | Visual 7: Top Products Snapshot	| Column Chart showing Top 5 Products by Combined Score	For highlighting high-performing products |  |
 | Visual 8: Revenue Insights | Bar Chart: Total Potential Revenue by Main Category |  |
+
+[Download Dashboard here](https://github.com/user-attachments/files/21090780/Amazon.case.study.MS.Excel.Project.pdf)
+
 
 
  
