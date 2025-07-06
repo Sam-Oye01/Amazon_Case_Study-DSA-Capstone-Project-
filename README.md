@@ -30,6 +30,7 @@ The dataset contains information scraped from Amazon product pages, including:
     - Duplicate rows were removed.
     - Column headers were formatted in the proper case.
     - Rating Count column header was changed to Review count.
+    - The data types of the columns with quantitative data was formatted appropriately.
 - **Data Manipulation:**
     - Data sets were added to the data model in the power pivot for easy manipulation and were updated periodically as new columns were being created.
     - Category column was splitted into (Product Category and Produt sub-category) using the "Text to columns" command in the Data tab. The delimiter used was the pipe sign (|).
@@ -62,7 +63,7 @@ The dataset contains information scraped from Amazon product pages, including:
         - Measure 4: =average([Discount_percentage])
 
         
-### Exploratory Data Analysis
+### Exploratory Data Analysis (EDA)
 EDA involved the exploring of the data to answer some questions about the data such as;
 
 1. What is the average discount percentage by product category? 
@@ -81,6 +82,76 @@ EDA involved the exploring of the data to answer some questions about the data s
 12. How many products have fewer than 1,000 reviews? 
 13. Which categories have products with the highest discounts? 
 14. Identify the top 5 products in terms of rating and number of reviews combined.
+
+
+**Task-by-Task Power Pivot Execution:**
+
+Insert Pivot Table using Data Model.
+
+Task 1: Average Discount % by Product Category
+- Rows: Product Main Category.
+- Values: Discount_percentage (set to Average).
+- Format values as Percentage.
+
+Task 2: Product Count by Category
+- Rows: Product Main Category.
+- Values: Product_name (set to Distinct Count).
+
+Task 3: Total Reviews by Category
+- Rows: Product Main Category.
+- Values: Review_count (set to Sum).
+
+Task 4: Products with Highest Ratings
+- Rows: Product_name.
+- Values: Rating (set to Average).
+- Sort Descending by Rating.
+- Filter to show Top 10.
+
+Task 5: Average Actual Price vs Discounted Price by Category
+- Rows: Product Main Category.
+- Values: Actual_price (set to Average).
+- Values: Discounted_price (set to Average).
+
+Task 6: Products with Most Reviews
+- Rows: Product_name.
+- Values: Review_count (set to Sum).
+- Sort Descending by Review Count.
+
+Task 7: Products with High (50% or More) Discount
+- Rows: High Discount.
+- Values: Product_name (set to Count).
+
+Task 8: Distribution of Product Ratings
+- Rows: Rating.
+- Values: Product_name (set to Count).
+
+Task 9: Total Potential Revenue by Category
+- Rows: Product Main Category.
+- Values: Potential Revenue (set to Sum).
+
+Task 10: Unique Products per Price range bucket
+- Rows: Price Range Bucket.
+- Values: Product_name (set to Distinct Count).
+
+Task 11: Rating by % Discount
+- Rows: Discount_percentage (group into bands)
+- Values: Rating (set to Average).
+
+Task 12: Count of Products with High (< 1,000) Reviews
+- Rows: Low Reviews.
+- Values: Product_name (set to Count).
+
+Task 13: Product Categories with Highest % Discounts
+- Rows: Product Main Category.
+- Values: Discount_percentage (set to Average).
+- Sort Descending.
+
+Task 14: Top 5 Products by Rating and Review count combined
+- Rows: Product_name.
+- Values: Combined Score (set to Sum).
+- Sort Descending.
+- Filter Top 5.
+
 
 
 
