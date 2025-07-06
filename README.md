@@ -163,6 +163,7 @@ Dashboard Structure (Layout)
 | :-----: | :-------------: | :----: |
 | Header Area (Top Row) | Dashboard Title: Amazon Product Review Dashboard, Date of Last Refresh, Name/Project Label | Text box is used with bold and large fonts for the title |
 | Key Metrics Section (KPIs) |  Total Reviews, Total Number of Products, Avg. Discount %, Total Potential revenue | Shapes with bold numbers were used |
+| Interactive Slicers (Filters) | Price Range Bucket | Real-time filtering across visuals were used |
 | Visual 1 & 2: Product Categories Overview	| Bar Chart: Number of Products by Category,  Pie Chart: % Discount by Product Category  |  |
 | Visual 3 & 4 : Price Range Analysis	| Donut Chart: Product Count by Price Range Bucket, Bar Chart: Avg. Price vs Discounted Price by Category | Helps illustrate price segmentation | | Visual 5: Discount & Rating Relationship | Column Chart: discount_percentage vs rating |  |
 | Visual 6: Review Insights	| Bar Chart: Total Reviews by Main Category	Display side by side for comparison |  |
