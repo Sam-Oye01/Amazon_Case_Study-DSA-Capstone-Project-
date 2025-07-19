@@ -175,6 +175,9 @@ Dashboard Structure (Layout)
 [Download Dashboard here](https://github.com/user-attachments/files/21090780/Amazon.case.study.MS.Excel.Project.pdf)
 
 
+![Amazon case study (MS Excel Project)_page-0001](https://github.com/user-attachments/assets/6920fb5b-2dd0-4a28-a170-2ad2cc2c97ab)
+
+
 
  
 
